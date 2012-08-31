@@ -62,6 +62,11 @@ public class CustomView extends View {
 		 */
 		paint.setColor(Color.BLUE);
 		canvas.drawPath(path2, paint);
+
+		// Draw a random circle to prove onDraw() works correctly
+		paint.setColor(Color.GREEN);
+		canvas.drawCircle((float) Math.random() * 200,
+				(float) Math.random() * 200, 10, paint);
 	}
 
 	@Override
